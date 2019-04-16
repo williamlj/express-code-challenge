@@ -1,0 +1,49 @@
+html
+  include ./includes/head.pug
+  body
+
+    include ./includes/nav.pug
+
+    div(class="container")
+     div(class="section")
+     form(class="col s12")
+      div(class="row")
+        div(class="col s12 center")
+          h1= heading
+      div(class="row")
+
+        div(class="input-field col s12")
+          input(id="email" name="email" type="email" value="" class="validate")
+          label(for="email") Email
+
+        div(class="input-field col s12")
+          input(id="password" name="password" type="password" value="" class="validate")
+          label(for="password") Password
+
+      div(class="row")
+        div(id="registerfields" class="input-field col s12")
+          input(id="username" name="username" type="text" value="" class="validate")
+          label(for="username"  class="active") Name
+
+      div(class="row")
+
+        div(class="input-field col s12")
+          p
+            label
+              input(type="checkbox" id="register" name="register" value="1")
+              span Register for a new account
+
+
+
+
+      div(class="row")
+        div(class="input-field col s12 right-align")
+          a(class="waves-effect waves-light btn green") Submit
+
+
+      div(class="row")
+        div(class="col s12")
+          p(class="light red-text") (N.b. Sign up using @ox.ac.uk or @cam.ac.uk domains)
+
+    include ./includes/js.pug
+    script(src="/js/login.js")

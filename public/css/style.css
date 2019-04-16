@@ -1,0 +1,46 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+}
+h6 {
+  font-weight: 900;
+}
+strong {
+  font-weight: 900;
+}
+.collapsible-header h6 > img {
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.collapsible-header h6 > span {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.collection .collection-item {
+    overflow: auto;
+}
+.collection-item > img {
+  float: left;
+  clear: left;
+  margin-right: 5px;
+  max-width: 70px;
+  height: 100px;
+  width: 70px;
+  background: #ccc;
+}
+#registerfields {
+  display: none;
+}
+i.material-icons {
+  vertical-align: middle;
+  margin-right: 5px;
+  color:#999;
+}

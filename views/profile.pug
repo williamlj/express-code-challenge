@@ -1,0 +1,25 @@
+html
+  include ./includes/head.pug
+
+  body
+    include ./includes/nav.pug
+
+    div(class="container")
+     div(class="section")
+      div(class="row")
+        div(class="col s12 center")
+          h1= heading
+      div(class="row")
+        div(class="col s12")
+          ul(class="collection")
+            li(class="collection-item") Name: #{username}
+            li(class="collection-item") Email: #{email}
+            li(class="collection-item") Roles: #{roles}
+
+        div(class="col s12")
+          p(class="center-align light" id="booksmessage")
+          pre(id="userbooks")
+
+
+    include ./includes/js.pug
+    script(src="/js/profile.js")

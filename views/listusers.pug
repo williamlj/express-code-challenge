@@ -1,0 +1,28 @@
+html
+  include ./includes/head.pug
+  body
+    include ./includes/nav.pug
+
+    div(class="container")
+     div(class="section")
+      div(class="row")
+        div(class="col s12 center")
+          h1= heading
+          h6 Click a user to view books available from their instituion.
+      div(class="row")
+        div(class="col s12")
+          ul(id="userlist" class="collapsible popout")
+
+    template(id="booktemplate")
+      li(data-id="{_id}")
+        div(class="collapsible-header")
+          h6
+            img(src="http://i.pravatar.cc/80?u={_id}")
+            |{username}
+            span ({email})
+        div(class="collapsible-body")
+          ul(class="collection")
+
+
+    include ./includes/js.pug
+    script(src="/js/listusers.js")

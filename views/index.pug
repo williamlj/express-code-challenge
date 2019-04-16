@@ -1,0 +1,26 @@
+html
+  include ./includes/head.pug
+  body
+    include ./includes/nav.pug
+
+
+    div(class="container")
+     div(class="section")
+      div(class="row")
+        div(class="col s12 center")
+          h1= heading
+      div(class="row")
+        div(class="col s12")
+          p Sample Institutions, Users & Books have been added to this demo. You can #[a( href='/login' ) log in] using any of the user emails (see the #[a( href='/users' ) View All Users] page) and the password "demo".
+          p Alternately, you can #[a( href='/login' ) create a new user] (use #[strong @ox.ac.uk] or #[strong @cam.ac.uk] or any of the domains included on the #[a( href='/users' ) users] page).
+
+      div(class="row")
+        div(class="col s12")
+          h6 William Littlejohn
+          h6
+            i(class="small material-icons") contact_mail
+            a(href="mailto:williamlittlejohn31@gmail.com") williamlittlejohn31@gmail.com
+          h6
+            i(class="small material-icons") contact_phone
+            a(href="tel:+13054971462") +1 305.497.1462
+  include ./includes/js.pug
